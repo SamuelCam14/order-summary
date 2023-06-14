@@ -1,0 +1,145 @@
+/* ===== FONT FAMILY IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Red Hat Display', sans-serif; */
+
+/* ===== GENERAL RULES CSS ===== */
+:root{
+    --primary-color: #e0e8ff;
+    --secondary-color: #3829e0;
+}
+
+body{
+    background-color: var(--primary-color);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== DESKTOP DESIGN ===== */
+
+article.order-summary {
+    background-color: white;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* ===== SECTION ORDER SUMMARY =====*/
+
+section.order-summary {
+    padding: 35px 30px;
+}
+
+section.order-summary h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: hsl(223, 47%, 23%);
+}
+
+section.order-summary p {
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    width: 85%;
+    margin: 25px auto;
+}
+
+    /* === MUSIC PLAN === */
+
+div.music-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin-inline: auto;
+    background-color: hsl(225, 100%, 98%);
+    padding: 8px 20px;
+    border-radius: 12px;
+}
+
+div.music-plan div.select-plan{
+    display: flex;
+    align-items: center;
+}
+
+div.music-plan div.select-plan p {
+    margin-left: 15px;
+    line-height: 1.5rem;
+}
+
+div.music-plan div.select-plan b {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+div.music-plan button {
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+        /* === HOVER === */
+
+div.music-plan button:hover {
+    color: #3829e0a9;
+}
+
+    /* === LAST BUTTONS === */
+
+section.order-summary button.proceed-button {
+    display: block;
+    margin-inline: auto;
+    padding: 20px;
+    width: 95%;
+    border: 0;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+        /* === HOVER === */
+
+section.order-summary button.proceed-button:hover {
+    background-color: #3829e0a9;
+}
+
+section.order-summary button.cancel-button {
+    margin-top: 25px;
+    border: none;
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+        /* === HOVER === */
+
+section.order-summary button.cancel-button:hover {
+    color: hsl(223, 47%, 23%);
+}
